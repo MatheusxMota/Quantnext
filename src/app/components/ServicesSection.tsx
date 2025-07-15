@@ -1,5 +1,5 @@
 import { FiZap, FiSun, FiDroplet, FiWind, FiHome, FiSettings, FiShield, FiCloudLightning, FiShoppingCart } from 'react-icons/fi';
-import AboutSection from './AboutSection';
+
 
 export default function ServicesSection() {
     const services = [
