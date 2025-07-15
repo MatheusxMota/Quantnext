@@ -1,9 +1,9 @@
-'use client'; // Adicione esta diretiva no topo do arquivo
+"use client"; // Adicione esta diretiva no topo do arquivo
 
-import Link from 'next/link';
-import Image from 'next/image';
-import { useState } from 'react';
-import { FiMenu, FiX } from 'react-icons/fi';
+import Link from "next/link";
+
+import { useState } from "react";
+import { FiMenu, FiX } from "react-icons/fi";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -12,12 +12,12 @@ export default function Header() {
     <header className="bg-green-600 text-white p-4 sticky top-0 z-50">
       <div className="container mx-auto flex justify-between items-center">
         <Link href="/" className="flex items-center">
-          <Image
-            src="/logo.png"
+          
+          <img
+            src="/logo.png" // Este é o caminho crucial, certifique-se de que corresponde ao arquivo em public/
             alt="Logo Quant-Tecnologia"
-            width={45}
-            height={45}
-            className="mr-2"
+            width={45} // Opcional, mas boa prática para layout
+            height={45} // Opcional, mas boa prática para layout
           />
           <span className="text-xl md:text-2xl font-bold hover:text-gray-200">
             Quant-Tecnologia
@@ -29,20 +29,30 @@ export default function Header() {
           <Link href="/" className="hover:text-gray-200 transition-colors py-2">
             Home
           </Link>
-          <Link href="#serviços" className="hover:text-gray-200 transition-colors py-2">
+          <Link
+            href="#serviços"
+            className="hover:text-gray-200 transition-colors py-2"
+          >
             Serviços
           </Link>
-          <Link href="#APP" className="hover:text-gray-200 transition-colors py-2">
+          <Link
+            href="#APP"
+            className="hover:text-gray-200 transition-colors py-2"
+          >
             Aplicativo
           </Link>
-          <Link href="#contato" className="hover:text-gray-200 transition-colors py-2">
+          <Link
+            href="#contato"
+            className="hover:text-gray-200 transition-colors py-2"
+          >
             Contato
           </Link>
-          <Link href="/portal" className=" transition-colors py-2 bg-quant-blue px-8 rounded-lg">
+          <Link
+            href="/portal"
+            className=" transition-colors py-2 bg-quant-blue px-8 rounded-lg"
+          >
             Portal
           </Link>
-
-
         </nav>
 
         {/* Botão Mobile */}
@@ -92,7 +102,6 @@ export default function Header() {
               className="text-center hover:text-quant-green transition-colors py-2  bg-quant-blue px-4 rounded-lg"
               onClick={() => setMobileMenuOpen(false)}
             >
-
               Portal
               <span className="text-xs text-gray-200 ml-1"></span>
             </Link>

@@ -1,6 +1,6 @@
 // components/AplicativoSection.tsx
 import React from "react";
-import Image from "next/image";
+
 import { FaWhatsapp } from "react-icons/fa";
 
 // Início do componente com 'export default function'
@@ -45,12 +45,10 @@ export default function AplicativoSection() {
           {/* Lado Esquerdo: Imagem do Aplicativo (Mockup) */}
           <div className="relative lg:w-1/2 w-full flex justify-center lg:justify-end">
             <div className="w-full max-w-sm lg:max-w-md aspect-[9/16] rounded-3xl shadow-2xl bg-gray-200 overflow-hidden transform rotate-3 hover:rotate-0 transition-all duration-500 ease-in-out">
-              <Image
-                src={appImageSrc}
+              <img
+                src={appImageSrc} // O caminho deve ser relativo à pasta 'public'
                 alt={appImageAlt}
-                layout="fill"
-                objectFit="cover"
-                className="object-top"
+                style={{ objectFit: "cover", width: "100%", height: "100%" }} // Estilos para replicar 'layout="fill"'
               />
             </div>
             {/* Elementos decorativos (Blobs) - Opcional, requer configuração no tailwind.config.js */}

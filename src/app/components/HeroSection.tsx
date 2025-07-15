@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 import { FaWhatsapp, FaEnvelope } from "react-icons/fa";
 
 export default function HeroSection() {
@@ -15,12 +15,10 @@ export default function HeroSection() {
         <div className="opacity-80">
           {" "}
           {/* Wrapper div for opacity */}
-          <Image
-            src="/hero-background.png" // Caminho para sua imagem
+          <img
+            src="/hero-background.png" // O caminho deve ser relativo à pasta 'public'
             alt="Background de equipamento elétrico"
-            layout="fill"
-            objectFit="cover"
-            quality={90}
+            style={{ objectFit: "cover", width: "100%", height: "100%" }} // Estilos para replicar 'layout="fill"'
           />
         </div>
         <div className="absolute inset-0 bg-black/50"></div>

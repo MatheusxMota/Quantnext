@@ -1,8 +1,6 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  /* config options here */
-  output: 'export', // Adicione esta linha aqui
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: 'export',
+  // Não inclua a seção 'images' se você vai usar <img> padrão para tudo.
 };
-
 export default nextConfig;
