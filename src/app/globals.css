@@ -2,19 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ADICIONE ESTAS REGRAS CSS ABAIXO */
+html, body {
+    height: 100%; /* Garante que body preencha a altura total do viewport */
+    width: 100%; /* Garante que body preencha a largura total do viewport */
+    margin: 0; /* Remove margens padrão do navegador */
+    padding: 0; /* Remove paddings padrão do navegador */
+    overflow-x: hidden; /* IMPEDE A ROLAGEM HORIZONTAL INDESEJADA */
+}
+
+/* Opcional, mas boa prática para garantir o modelo de caixa do CSS */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
 
 .hover-shadow-green:hover {
     box-shadow: 0 10px 15px -3px rgba(13, 194, 71, 0.1), 0 4px 6px -2px rgba(9, 148, 16, 0.892);
 }
-
-
 
 @keyframes fadeIn {
     from {
         opacity: 0;
         transform: translateY(-10px);
     }
-
     to {
         opacity: 1;
         transform: translateY(0);

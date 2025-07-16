@@ -16,7 +16,7 @@ export default function AplicativoSection() {
     "Alertas e Notificações Instantâneas",
     "Relatórios Analíticos Detalhados",
     "Acesso Remoto Seguro e Confiável",
-    "Integração Simples com Seus Sistemas",
+    "Integração com Sistemas",
     "Análise Preditiva e Histórico de Dados",
   ];
   const appImageSrc = "/app-mockup.png"; // Certifique-se de ter esta imagem em `public/images/`
