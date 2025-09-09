@@ -12,7 +12,7 @@ const config: Config = {
         'quant-dark': '#1A1A1A',
         'quant-green': '#00B33C',
         'quant-blue': '#007BFF',
-        'roxo-escuro' : '#512da8' ,
+        'roxo-escuro' : '#800080' ,
         'quant-text-primary': '#FFFFFF',
         'quant-text-secondary': '#B0B0B0',
       },
