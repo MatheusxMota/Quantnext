@@ -18,7 +18,7 @@ export default function HeroSection() {
             <div className="relative z-10 flex flex-col items-start justify-center h-full max-w-7xl mx-auto px-6 lg:px-8">
                 <div className="max-w-4xl">
                     <h1 className="text-quant-text-primary text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
-                        <span className="text-quant-green">Quant Tecnologia:</span> Inovação e Soluções Completas.
+                        <span className="text-quant-blue">Quant Tecnologia:</span> Inovação e Soluções Completas.
                     </h1>
                     <h2 className="text-quant-text-primary text-2xl sm:text-3xl lg:text-4xl font-medium leading-tight">
                         <p className="text-quant-text-primary text-lg sm:text-xl leading-relaxed max-w-2xl mb-6">
