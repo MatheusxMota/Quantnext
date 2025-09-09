@@ -13,12 +13,7 @@ export default function Header() {
       <div className="container mx-auto flex justify-between items-center">
         <Link href="/" className="flex items-center">
           
-          <img
-            src="/logo.png" // Este é o caminho crucial, certifique-se de que corresponde ao arquivo em public/
-            alt="Logo Quant-Tecnologia"
-            width={45} // Opcional, mas boa prática para layout
-            height={45} // Opcional, mas boa prática para layout
-          />
+          
           <span className="text-xl md:text-2xl font-bold hover:text-gray-200">
             Quant-Tecnologia
           </span>
