@@ -9,7 +9,7 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-red-600 text-white p-4 sticky top-0 z-50">
+    <header className="bg-roxo-escuro text-white p-4 sticky top-0 z-50">
       <div className="container mx-auto flex justify-between items-center">
         <Link href="/" className="flex items-center">
           
